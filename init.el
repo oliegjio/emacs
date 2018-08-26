@@ -427,17 +427,6 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (rainbow-delimiters rainbow-mode sass-mode rjsx-mode basic-mode fsharp-mode csharp-mode php-mode dart-mode kotlin-mode coffee-mode elm-mode typescript-mode js2-mode helm org-plus-contrib arduino-mode elixir-mode markdown-mode clojure-mode go-mode yaml-mode smooth-scroll projectile powerline multi-term memoize material-theme linum-relative haskell-mode flx-ido emmet-mode autopair))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
