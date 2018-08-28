@@ -61,22 +61,6 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; LOADS / PACKAGES RC:
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(load "~/.emacs.d/rc/packages/js2-mode.el")
-(load "~/.emacs.d/rc/flx-ido-rc.el")
-(load "~/.emacs.d/rc/projectile-rc.el")
-(load "~/.emacs.d/rc/org-plus-contrib-rc.el")
-;; (load "~/.emacs.d/rc/linum-relative-rc.el")
-(load "~/.emacs.d/rc/emmet-mode-rc.el")
-(load "~/.emacs.d/rc/rainbow-mode-rc.el")
-(load "~/.emacs.d/rc/rainbow-delimiters-rc.el")
-(load "~/.emacs.d/rc/autopair-rc.el")
-(load "~/.emacs.d/rc/material-theme-rc.el")
-(load "~/.emacs.d/rc/powerline-rc.el")
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; LOADS / RC:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -86,6 +70,22 @@
 (load "~/.emacs.d/rc/variables-rc.el")
 (load "~/.emacs.d/rc/fonts-rc.el")
 (load "~/.emacs.d/rc/modes-rc.el")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; LOADS / PACKAGES RC:
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(load "~/.emacs.d/rc/packages/js2-mode-rc.el")
+(load "~/.emacs.d/rc/packages/flx-ido-rc.el")
+(load "~/.emacs.d/rc/packages/projectile-rc.el")
+(load "~/.emacs.d/rc/packages/org-plus-contrib-rc.el")
+;; (load "~/.emacs.d/rc/packages/linum-relative-rc.el")
+(load "~/.emacs.d/rc/packages/emmet-mode-rc.el")
+(load "~/.emacs.d/rc/packages/rainbow-mode-rc.el")
+(load "~/.emacs.d/rc/packages/rainbow-delimiters-rc.el")
+(load "~/.emacs.d/rc/packages/autopair-rc.el")
+(load "~/.emacs.d/rc/packages/material-theme-rc.el")
+(load "~/.emacs.d/rc/packages/powerline-rc.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
