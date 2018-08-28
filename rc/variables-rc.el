@@ -1,0 +1,23 @@
+(setq-default cursor-type 'bar)
+(setq-default c-basic-indent 4)
+(setq-default c-basic-offset 4)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+(setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80))
+(setq use-dialog-box nil)
+(setq confirm-nonexistent-file-or-buffer nil)
+(setq inhibit-startup-screen t)
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
+(setq kill-buffer-query-functions
+  (remq 'process-kill-buffer-query-function
+        kill-buffer-query-functions))
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse t)
+(setq ring-bell-function #'ignore)
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 3)))
+(setq scroll-step 3)
+(setq-default mode-line-format nil)
+(setq next-line-add-newlines t)
