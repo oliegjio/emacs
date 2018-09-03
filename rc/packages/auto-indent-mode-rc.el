@@ -1,0 +1,1 @@
+(auto-indent-global-mode)

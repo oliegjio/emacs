@@ -22,6 +22,7 @@
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 (ensure-package-installed
+  'auto-indent-mode
   'material-theme
   'powerline
   'haskell-mode
@@ -86,6 +87,7 @@
 (load "~/.emacs.d/rc/packages/autopair-rc.el")
 (load "~/.emacs.d/rc/packages/material-theme-rc.el")
 (load "~/.emacs.d/rc/packages/powerline-rc.el")
+(load "~/.emacs.d/rc/packages/auto-indent-mode-rc.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
