@@ -54,7 +54,7 @@
   'rjsx-mode
   'rainbow-mode
   'rainbow-delimiters
-  ;; 'magit
+  'magit
   ;; 'cider
   ;; 'intero
   ;; 'elpy
