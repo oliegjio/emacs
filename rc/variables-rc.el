@@ -21,3 +21,4 @@
 (setq scroll-step 3)
 (setq-default mode-line-format nil)
 (setq next-line-add-newlines t)
+(setq vc-follow-symlinks t)
