@@ -8,20 +8,14 @@
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
-(defun ensure-package-installed (&rest packages)
-  "Assure every package is installed, ask for installation if it’s not.
-   Return a list of installed packages or nil for every skipped package."
+(defun install-packages (&rest packages)
+  (package-refresh-contents)
   (mapcar
     (lambda (package)
-      (if (package-installed-p package)
-          nil
-        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
-            (package-install package)
-          package)))
+      (if (not (package-installed-p package))
+          (package-install package)))
     packages))
-(or (file-exists-p package-user-dir)
-    (package-refresh-contents))
-(ensure-package-installed
+(setq my-packages (list
   'auto-indent-mode
   'material-theme
   'powerline
@@ -42,6 +36,7 @@
   'org-plus-contrib
   'js2-mode
   'typescript-mode
+  'wolfram-mode
   'elm-mode
   'coffee-mode
   'kotlin-mode
@@ -55,14 +50,13 @@
   'rainbow-mode
   'rainbow-delimiters
   'magit
-  ;; 'cider
-  ;; 'intero
-  ;; 'elpy
-  ;; 'tide
-  )
+))
+(defun install-my-packages ()
+  (interactive)
+  (apply 'install-packages my-packages))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; LOADS / RC:
+;; LOADS / EMACS RC:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (load "~/.emacs.d/rc/no-gui-rc.el")
@@ -80,7 +74,6 @@
 (load "~/.emacs.d/rc/packages/flx-ido-rc.el")
 (load "~/.emacs.d/rc/packages/projectile-rc.el")
 (load "~/.emacs.d/rc/packages/org-plus-contrib-rc.el")
-;; (load "~/.emacs.d/rc/packages/linum-relative-rc.el")
 (load "~/.emacs.d/rc/packages/emmet-mode-rc.el")
 (load "~/.emacs.d/rc/packages/rainbow-mode-rc.el")
 (load "~/.emacs.d/rc/packages/rainbow-delimiters-rc.el")
@@ -88,11 +81,30 @@
 (load "~/.emacs.d/rc/packages/material-theme-rc.el")
 (load "~/.emacs.d/rc/packages/powerline-rc.el")
 (load "~/.emacs.d/rc/packages/auto-indent-mode-rc.el")
+;; (load "~/.emacs.d/rc/packages/linum-relative-rc.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
