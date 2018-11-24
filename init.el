@@ -50,6 +50,7 @@
   'rainbow-mode
   'rainbow-delimiters
   'magit
+  'slime
 ))
 (defun install-my-packages ()
   (interactive)
@@ -81,6 +82,7 @@
 (load "~/.emacs.d/rc/packages/material-theme-rc.el")
 (load "~/.emacs.d/rc/packages/powerline-rc.el")
 (load "~/.emacs.d/rc/packages/auto-indent-mode-rc.el")
+(load "~/.emacs.d/rc/packages/slime-rc.el")
 ;; (load "~/.emacs.d/rc/packages/linum-relative-rc.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
