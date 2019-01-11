@@ -22,3 +22,4 @@
 (setq-default mode-line-format nil)
 (setq next-line-add-newlines t)
 (setq vc-follow-symlinks t)
+(setq create-lockfiles nil)
