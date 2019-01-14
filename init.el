@@ -66,6 +66,7 @@
 (load "~/.emacs.d/rc/variables-rc.el")
 (load "~/.emacs.d/rc/fonts-rc.el")
 (load "~/.emacs.d/rc/modes-rc.el")
+(load "~/.emacs.d/rc/hooks-rc.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; LOADS / PACKAGES RC:
