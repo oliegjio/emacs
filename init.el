@@ -6,8 +6,10 @@
 
 (require 'package)
 (package-initialize)
+
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+
 (defun install-packages (&rest packages)
   (package-refresh-contents)
   (mapcar
@@ -15,6 +17,7 @@
       (if (not (package-installed-p package))
           (package-install package)))
     packages))
+
 (setq my-packages (list
   'auto-indent-mode
   'material-theme
@@ -51,7 +54,8 @@
   'rainbow-delimiters
   'magit
   'slime
-))
+  'multiple-cursors))
+
 (defun install-my-packages ()
   (interactive)
   (apply 'install-packages my-packages))
